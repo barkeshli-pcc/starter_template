@@ -1,11 +1,14 @@
 #include "gtest/gtest.h"
 #include <iostream>
 #include <iomanip>
-#include "../../includes/stub/stub.h"
+using namespace std;
 
-bool test_stub(bool debug = false){
-  bool test = stub();
-  return test;
+bool test_stub(bool debug = false)
+{
+  if (debug){
+    cout << "testB:: test-sub() entering test_sub" << endl;
+  }
+  return true;
 }
 
 TEST(TEST_STUB, TestStub) {

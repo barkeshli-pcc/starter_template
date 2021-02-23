@@ -27,3 +27,15 @@
 # Reflections:
 
 - Any thoughts you may have and would like to share.
+
+# **output**
+
+## Delete this line and paste the output of your basic test and then testB here
+
+<br/><br/>
+
+# basic_test.cpp output:
+
+<br/><br/><br/><br/>
+
+# testB.cpp output:

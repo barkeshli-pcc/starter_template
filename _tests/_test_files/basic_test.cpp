@@ -1,7 +1,6 @@
 #include "gtest/gtest.h"
 #include <iostream>
 #include <iomanip>
-#include "../../includes/stub/stub.h"
 using namespace std;
 //----------------------------------------------------------------------------------------
 //          COPY BASIC_TEST INTO THIS FILE.
