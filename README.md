@@ -1,3 +1,4 @@
+
 # Work Report
 
 ## Name: <ins> your name goes here </ins>
@@ -35,7 +36,12 @@
 <br/><br/>
 
 # basic_test.cpp output:
-
+<pre>
 <br/><br/><br/><br/>
-
+</pre>
 # testB.cpp output:
+<pre>
+<br/><br/><br/><br/>
+</pre>
+
+
