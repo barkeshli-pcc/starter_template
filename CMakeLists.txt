@@ -5,21 +5,22 @@ project(barkeshli_s22)
 set(CMAKE_CXX_STANDARD 11)
 
 #. . . . . . . . . . . . . . . . . . . .
+include(GNUInstallDirs)
 if(MSVC)
     add_compile_options(/W4)
     add_link_options(/W4)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/bin)
     # message("compiler: MSVC")
 else()
     # message("compiler: NOT MSVC")
     # add_compile_options(-Wall -Wextra -pedantic -Werror -Wl,--fatal-warnings)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 endif()
 
 
 # place binaries and libraries according to GNU standards
-include(GNUInstallDirs)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/bin)
 
 
 
@@ -43,8 +44,6 @@ FetchContent_MakeAvailable(googletest)
  
 enable_testing() 
 
-
-enable_testing()
 
 # ------------------------------------
 
